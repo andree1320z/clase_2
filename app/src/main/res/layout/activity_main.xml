@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="35dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
+
+    <TextView
+        android:id="@+id/lblEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Edad"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/lblEdad"
+        app:layout_constraintTop_toBottomOf="@+id/lblEdad" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+</android.support.constraint.ConstraintLayout>
